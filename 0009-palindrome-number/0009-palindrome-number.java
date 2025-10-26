@@ -7,7 +7,6 @@ class Solution {
             rem=x%10;
             sum=sum*10+rem;
             x/=10;
-
         }
         if(temp==sum){
             return true;
