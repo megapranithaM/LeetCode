@@ -1,15 +1,20 @@
 class Solution{
-    public int[] twoSum(int[] numbers, int target){
-        for(int i=0;i<numbers.length;i++){
-            for(int j=i+1;j<numbers.length;j++){
-                if(numbers[i]+numbers[j]==target){
-                    int[] result=new int[2];
-                    result[0]=i+1;
-                    result[1]=j+1;
-                    return result;
-                }
+    public int[] twoSum(int[] numbers,int target){
+        int i=0,j=numbers.length-1;
+        while(i<j){
+            int sum=numbers[i]+numbers[j];
+            if(sum==target){
+                return new int[]{i+1,j+1};
             }
+            if(sum<target){
+                i++;}
+            else {
+                j--;
+            }
+
         }
         return new int[0];
     }
 }
+
+
