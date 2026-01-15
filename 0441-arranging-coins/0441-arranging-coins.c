@@ -1,8 +1,8 @@
 int arrangeCoins(int n) {
-    int i;
-    for(i=1; i<=n; i++){
-        if(n-i >= 0) n = n-i;
-        else break;
+    int i = 1;
+    while (n >= i) {
+        n -= i;
+        i++;
     }
-    return i-1;
+    return i - 1;
 }
