@@ -4,7 +4,7 @@ class Solution {
         while(left<right){
             char l=s.charAt(left);
             char r=s.charAt(right);
-            if(!isAlphaNum(l)){
+            if(! isAlphaNum(l)){
                 left++;
             }else if(! isAlphaNum(r)){
                 right--;
