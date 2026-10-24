@@ -6,7 +6,7 @@ class Solution {
             char r=s.charAt(right);
             if(!isAlphaNum(l)){
                 left++;
-            }else if(!isAlphaNum(r)){
+            }else if(! isAlphaNum(r)){
                 right--;
             }else{
                 if(Character.toLowerCase(l) != Character.toLowerCase(r)){
@@ -15,12 +15,10 @@ class Solution {
                 left++;
                 right--;
             }
-            
-
         }
         return true;
     }
     private boolean isAlphaNum(char c){
-        return (c>='a' && c<='z') || (c>='A' && c<='Z') ||(c>='0' && c<='9');
+        return (c>='a' && c<='z')|| (c>='A' && c<='Z') || (c>='0' && c<='9');
     }
 }
