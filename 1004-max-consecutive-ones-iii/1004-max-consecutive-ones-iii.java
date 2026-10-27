@@ -11,7 +11,8 @@ class Solution {
                 }
                 left++;
             }
-max_count=Math.max(max_count,right-left+1);
-        }return max_count;
+            max_count=Math.max(max_count,right-left+1);
+        }
+        return max_count;
     }
 }
