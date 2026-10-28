@@ -3,7 +3,8 @@ class Solution {
         if(k<=1){
             return 0;
         }
-        int left=0,count=0,pro=1;
+        int left=0,count=0;
+        int pro=1;
         for(int right=0;right<nums.length;right++){
             pro*=nums[right];
             while(pro>=k){
