@@ -14,9 +14,11 @@ class Solution {
             if(i!=j){
                 sum+=mat[i][j];
             }
-            i++;
-            j--;
+                i++;
+                j--;
+            
         }
         return sum;
+
     }
 }
