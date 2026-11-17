@@ -3,9 +3,8 @@ class Solution {
         int n=numbers.length;
         int left=0;
         int right=n-1;
-        int sum=0;
         while(left<right){
-            sum=numbers[left]+numbers[right];
+            int sum=numbers[left]+numbers[right];
             if(sum==target){
                 return new int[]{left+1,right+1};
             }
@@ -16,6 +15,6 @@ class Solution {
                 left++;
             }
         }
-        return new int[]{-1,1};
+        return new int[]{-1,-1};
     }
 }
