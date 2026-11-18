@@ -8,7 +8,6 @@ class Solution {
                 nums[low]=0;
                 low++;
                 mid++;
-
             }else if(nums[mid]==1){
                 mid++;
             }else{
@@ -17,5 +16,6 @@ class Solution {
                 high--;
             }
         }
+        
     }
 }
