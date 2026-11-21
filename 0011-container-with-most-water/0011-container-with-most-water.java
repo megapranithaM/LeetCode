@@ -6,16 +6,16 @@ class Solution {
         int maxArea=0;
         while(left<right){
             int h=Math.min(height[left],height[right]);
-            int w=right-left;
-            int area=h*w;
-            maxArea=Math.max(maxArea,area);
-            if(height[left]<height[right]){
+            int width=right-left;
+            int area=h*width;
+            maxArea=Math.max(area,maxArea);
+            if(height[left]<=height[right]){
                 left++;
-
             }else{
                 right--;
             }
         }
         return maxArea;
+
     }
 }
